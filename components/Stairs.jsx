@@ -38,11 +38,11 @@ const Stairs = () => {
             animate="animate"
             exit="exit"
             transition={{
-              duration: 0.4,
+              duration: 0.3,
               ease: "easeInOut",
-              delay: reverseIndex(index) * 0.1,
+              delay: reverseIndex(index) * 0.07,
             }}
-            className="h-full w-full bg-white relative"
+            className="h-full w-full bg-gray-600 relative"
           />
         );
       })}

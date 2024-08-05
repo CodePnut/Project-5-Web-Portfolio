@@ -169,10 +169,10 @@ import { motion } from "framer-motion";
 const Resume = () => {
   return (
     <motion.div
-      initial={{ opacitiy: 0 }}
+      initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 1.5, duration: 0.4, ease: "easeIn" },
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 x;:py-0"
     >
