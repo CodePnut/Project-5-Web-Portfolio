@@ -7,9 +7,22 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaRobot,
+  FaVideo,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs, SiPostgresql } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiPostgresql,
+  SiExpress,
+  SiMongodb,
+  SiVite,
+  SiAdobephotoshop,
+  SiCanva,
+  SiWordpress,
+  SiMicrosoftword,
+} from "react-icons/si";
 
 // about data
 const about = {
@@ -111,46 +124,34 @@ const education = {
 
 // skills data
 const skills = {
-  title: "My skills",
-  description:
-    "I have hands-on experience with HTML5, CSS3, and JavaScript, complemented by expertise in React, Next.js, and Node.js for full-stack development. I leverage Tailwind CSS for modern styling and Figma for design. Proficient in PostgreSQL for robust database management.",
-  skillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "HTML5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "CSS3",
-    },
-    {
-      icon: <FaJs />,
-      name: "JavaScript",
-    },
-    {
-      icon: <FaReact />,
-      name: "React.js",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "Next.js",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "Node.js",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "Tailwind CSS",
-    },
-    {
-      icon: <FaFigma />,
-      name: "Figma",
-    },
-    {
-      icon: <SiPostgresql />,
-      name: "PostgreSQL",
-    },
+  title: "My Skills",
+  description: "Here are some of the technologies I work with.",
+  frontEndSkills: [
+    { name: "HTML", icon: <FaHtml5 /> },
+    { name: "CSS", icon: <FaCss3 /> },
+    { name: "JavaScript", icon: <FaJs /> },
+    { name: "React", icon: <FaReact /> },
+    { name: "Figma", icon: <FaFigma /> },
+    { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+    { name: "Next.js", icon: <SiNextdotjs /> },
+    { name: "Vite.js", icon: <SiVite /> },
+    // Add more front-end skills here
+  ],
+  backEndSkills: [
+    { name: "Node.js", icon: <FaNodeJs /> },
+    { name: "PostgreSQL", icon: <SiPostgresql /> },
+    { name: "Express.js", icon: <SiExpress /> },
+    { name: "MongoDB", icon: <SiMongodb /> },
+    // Add more back-end skills here
+  ],
+  otherPrograms: [
+    { name: "Photoshop", icon: <SiAdobephotoshop /> },
+    { name: "Canva", icon: <SiCanva /> },
+    { name: "Wordpress", icon: <SiWordpress /> },
+    { name: "Midjourney", icon: <FaRobot /> },
+    { name: "Microsoft Word", icon: <SiMicrosoftword /> },
+    { name: "Capcut", icon: <FaVideo /> },
+    // Add more other programs here
   ],
 };
 
@@ -283,9 +284,10 @@ const Resume = () => {
                     {skills.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, index) => {
-                    return (
+                <div className="flex flex-col gap-[30px]">
+                  <h4 className="text-3xl font-semibold">Front-End Stack</h4>
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {skills.frontEndSkills.map((skill, index) => (
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
@@ -300,9 +302,51 @@ const Resume = () => {
                           </Tooltip>
                         </TooltipProvider>
                       </li>
-                    );
-                  })}
-                </ul>
+                    ))}
+                  </ul>
+                </div>
+                <div className="flex flex-col gap-[30px]">
+                  <h4 className="text-3xl font-semibold">Back-End Stack</h4>
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {skills.backEndSkills.map((skill, index) => (
+                      <li key={index}>
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                              <div className="text-6xl group-hover:text-accent transition-all duration-300 transform group-hover:scale-110">
+                                {skill.icon}
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="capitalize">{skill.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="flex flex-col gap-[30px]">
+                  <h4 className="text-3xl font-semibold">Other Programs</h4>
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {skills.otherPrograms.map((skill, index) => (
+                      <li key={index}>
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                              <div className="text-6xl group-hover:text-accent transition-all duration-300 transform group-hover:scale-110">
+                                {skill.icon}
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="capitalize">{skill.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </TabsContent>
 

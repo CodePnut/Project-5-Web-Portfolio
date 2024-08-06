@@ -8,25 +8,25 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veritatis ex corrupti eius recusandae officiis et.",
+      "Harnessing my expertise as a software developer, I create high-quality, responsive websites tailored to your needs. Leveraging modern technologies like HTML5, CSS3, JavaScript, React, and Node.js, I ensure your site is not only visually appealing but also functional and user-friendly.",
   },
   {
     num: "02",
     title: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veritatis ex corrupti eius recusandae officiis et.",
+      "I design and build state-of-the-art, functional user interfaces that enhance user experience. Using Figma and advanced AI design tools, I craft intuitive and visually engaging designs that captivate and delight users, ensuring seamless navigation and interaction.",
   },
   {
     num: "03",
     title: "Brand Logo Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veritatis ex corrupti eius recusandae officiis et.",
+      "I create eye-catching brand logos that make a lasting impression. Utilising AI tools like MidJourney and Leonardo AI, along with Adobe Photoshop and Canva, I deliver unique, lucrative logo designs that perfectly represent your brand identity and stand out in the market.",
   },
   {
     num: "04",
     title: "Marketing & SEO",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veritatis ex corrupti eius recusandae officiis et.",
+      "Maximise your online presence with my expert marketing and SEO services. Specialising in eCommerce optimisation, I enhance your product titles, descriptions, and overall SEO to drive traffic and boost sales. My copywriting skills ensure your content is compelling and effective, turning visitors into loyal customers.",
   },
 ];
 
