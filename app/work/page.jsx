@@ -98,7 +98,7 @@ const projects = [
       { name: "Tailwind.css" },
       { name: "mongoDB" },
     ],
-    image: "/assets/work/image4.png",
+    image: "/assets/work/image5.png",
     live: "",
     github: "https://github.com/CodePnut/website-portfolio",
   },
