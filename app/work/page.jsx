@@ -37,7 +37,7 @@ const projects = [
     category: "fullstack",
     title: "project 2",
     description: `Created a platform for players to share and like games using JavaScript, CSS, and HTML.
-    Utilised CRUD operations for interactive feature development and data management.
+    Utilised 'CRUD' operations for interactive feature development and data management.
     Integrated PostgreSQL for robust SQL database management.
     Ensured seamless user experience without relying on external APIs.`,
     stack: [
