@@ -13,7 +13,7 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="h2">Software Developer</span>
             <h1 className="h1 mb-6">
               Hello I'm <br />{" "}
               <span className="text-accent">Mark Velasquez</span>
@@ -29,8 +29,14 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2 text-accent border-accent hover:bg-accent hover:text-black"
               >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
+                <a
+                  href="/assets/resume/Velasquez CV.pdf"
+                  download="My_CV.pdf"
+                  className="flex items-center gap-2"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </a>
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social

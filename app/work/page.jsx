@@ -29,8 +29,8 @@ const projects = [
       "Developed a Star Wars-themed tic-tac-toe game using JavaScript, CSS, and HTML\nImplemented an AI algorithm to enable gameplay against bots.\nIntegrated audio elements to enhance the gaming experience.\nDesigned a user-friendly interface with responsive design.",
     stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "JavaScript" }],
     image: "/assets/work/image1.png",
-    live: "",
-    github: "",
+    live: "https://codepnut.github.io/Project-1/",
+    github: "https://github.com/CodePnut/Project-1",
   },
   {
     num: "02",
@@ -48,7 +48,7 @@ const projects = [
     ],
     image: "/assets/work/image2.png",
     live: "",
-    github: "",
+    github: "https://github.com/CodePnut/Project-2-CRUD",
   },
   {
     num: "03",
@@ -65,7 +65,7 @@ const projects = [
     ],
     image: "/assets/work/image3.png",
     live: "",
-    github: "",
+    github: "https://github.com/angelatolim/epsilon_servo",
   },
   {
     num: "04",
@@ -82,8 +82,25 @@ const projects = [
       { name: "API" },
     ],
     image: "/assets/work/image4.png",
+    live: "https://mako-zone.vercel.app/",
+    github: "https://github.com/CodePnut/Mako-Zone",
+  },
+  {
+    num: "05",
+    category: "fullstack",
+    title: "project 5",
+    description:
+      "Developed a personal website portfolio using Next.js and React for a dynamic experience. Tailwind CSS ensured responsive design, while Framer Motion added smooth animations. Implemented backend forms with MongoDB for secure data management, showcasing seamless integration of front-end and back-end technologies.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Framer Motion" },
+      { name: "React" },
+      { name: "Tailwind.css" },
+      { name: "mongoDB" },
+    ],
+    image: "/assets/work/image5.png",
     live: "",
-    github: "",
+    github: "https://github.com/CodePnut/website-portfolio",
   },
 ];
 
