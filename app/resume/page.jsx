@@ -125,7 +125,28 @@ const education = {
 // skills data
 const skills = {
   title: "My Skills",
-  description: "Here are some of the technologies I work with.",
+  description: (
+    <>
+      <p>
+        Here's a comprehensive description that highlights your overall skills:
+        "I am a versatile software developer with a robust skill set spanning
+        front-end, back-end, and various other programs. My expertise in
+        front-end development includes HTML, CSS, JavaScript, React, Figma,
+        Tailwind CSS, Next.js, and Vite.js, enabling me to create responsive,
+        user-friendly interfaces. On the back-end, I am proficient in Node.js,
+        PostgreSQL, Express.js, and MongoDB, ensuring efficient and scalable
+        server-side solutions.
+      </p>
+      <br />
+      <p>
+        Additionally, I have experience with tools like Photoshop, Canva,
+        Wordpress, MidJourney, Microsoft Word, and Capcut, which enhance my
+        ability to design, edit, and manage content effectively. This diverse
+        skill set allows me to deliver comprehensive and high-quality web
+        development projects that meet and exceed client expectations.
+      </p>
+    </>
+  ),
   frontEndSkills: [
     { name: "HTML", icon: <FaHtml5 /> },
     { name: "CSS", icon: <FaCss3 /> },
