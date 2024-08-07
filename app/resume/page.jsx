@@ -117,7 +117,7 @@ const education = {
     {
       institution: "Newcastle University",
       degree: "BSc (Hons) Marketing and Management",
-      duration: "2019 - 2023",
+      duration: "2017 - 2020",
     },
   ],
 };
