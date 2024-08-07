@@ -138,7 +138,7 @@ const Work = () => {
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-4">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
@@ -200,7 +200,7 @@ const Work = () => {
                         <Image
                           src={project.image}
                           fill
-                          className="w-full h-full object-fill md:object-contain lg:object-contain xl:object-fill"
+                          className="w-full h-full object-contain md:object-contain lg:object-contain xl:object-fill"
                           alt=""
                         />
                       </div>
