@@ -31,7 +31,8 @@ const Home = () => {
               >
                 <a
                   href="/assets/resume/Velasquez CV.pdf"
-                  download="My_CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2"
                 >
                   <span>Download CV</span>

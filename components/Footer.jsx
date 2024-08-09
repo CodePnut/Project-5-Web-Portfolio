@@ -5,10 +5,7 @@ const Footer = () => {
   return (
     <footer className="mt-[250px] bg-neutral-900 text-white py-4 container mx-auto flex justify-between items-center">
       <div className="container mx-auto px-2 text-center">
-        <div className="flex items-center justify-center mb-2">
-          <img src="/assets/photo1.png" alt="Company Logo" className="h-20" />
-          <span className="text-accent text-4xl">.</span>
-        </div>
+        <div className="flex items-center justify-center mb-2"></div>
         <div className="mb-4">
           <a
             href="/"
@@ -28,9 +25,6 @@ const Footer = () => {
           >
             Contact
           </a>
-        </div>
-        <div className="mb-4">
-          <p>Contacts: markavel96@outlook.com | +65 80871453</p>
         </div>
         <div className="mb-4 flex justify-center space-x-4">
           <a

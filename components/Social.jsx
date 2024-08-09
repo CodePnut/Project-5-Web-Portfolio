@@ -1,6 +1,5 @@
-import Link from "next/link";
-
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import Link from "next/link";
 
 const socials = [
   { icon: <FaGithub />, path: "https://github.com/CodePnut?tab=repositories" },
@@ -11,13 +10,17 @@ const socials = [
 const Social = ({ containerStyles, iconStyles }) => {
   return (
     <div className={containerStyles}>
-      {socials.map((item, index) => {
-        return (
-          <Link key={index} href={item.path} className={iconStyles}>
-            {item.icon}
-          </Link>
-        );
-      })}
+      {socials.map((item, index) => (
+        <Link
+          key={index}
+          href={item.path}
+          className={iconStyles}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {item.icon}
+        </Link>
+      ))}
     </div>
   );
 };

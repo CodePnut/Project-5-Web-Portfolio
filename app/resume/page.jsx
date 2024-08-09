@@ -27,8 +27,18 @@ import {
 // about data
 const about = {
   title: "About me",
-  description:
-    "🚀 From marketing to tech, I’ve transformed into a full-stack developer skilled in HTML5, CSS3, JS, React, Next.js, and Node.js. With a flair for design using Tailwind CSS and Figma, and expertise in PostgreSQL, I craft engaging and efficient web solutions. Let's build something amazing together! 🌟💻",
+  description: [
+    "I pride myself on being someone others can count on—whether it’s meeting deadlines, offering creative solutions, or simply being a trustworthy teammate.",
+    "I approach every task with meticulous attention to detail and a positive mindset, always aiming to bring out the best in any situation.",
+    "My ambition drives me to continuously learn and grow, not just in my professional life but in everything I do.",
+    <br />,
+    <br />,
+    "When I’m not immersed in coding, you’ll likely find me on the basketball court 🏀, badminton court 🏸, or taking a refreshing swim 🏊‍♂️.",
+    "Sports keep me grounded, fuel my energy, and remind me of the importance of teamwork and persistence.",
+    <br />,
+    <br />,
+    "I believe in the power of balance—staying active both mentally and physically, and always finding joy in the journey.",
+  ],
   info: [
     {
       fieldName: "Name:",
@@ -128,8 +138,7 @@ const skills = {
   description: (
     <>
       <p>
-        Here's a comprehensive description that highlights your overall skills:
-        "I am a versatile software developer with a robust skill set spanning
+        I am a versatile software developer with a robust skill set spanning
         front-end, back-end, and various other programs. My expertise in
         front-end development includes HTML, CSS, JavaScript, React, Figma,
         Tailwind CSS, Next.js, and Vite.js, enabling me to create responsive,
@@ -301,9 +310,6 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">
-                    {skills.description}
-                  </p>
                 </div>
                 <div className="flex flex-col gap-[30px]">
                   <h4 className="text-3xl font-semibold">Front-End Stack</h4>
@@ -367,6 +373,9 @@ const Resume = () => {
                       </li>
                     ))}
                   </ul>
+                  <p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">
+                    {skills.description}
+                  </p>
                 </div>
               </div>
             </TabsContent>
