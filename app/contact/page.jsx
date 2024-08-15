@@ -20,7 +20,7 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "(+65) 80871453",
+    description: "(+65) 8512 5635",
   },
   {
     icon: <FaEnvelope />,
